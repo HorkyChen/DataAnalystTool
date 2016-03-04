@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+    <Element0>
+        <name>Source_1</name>
+        <type>source</type>
+        <parameters>
+            <filepath>/Volumes</filepath>
+            <seperator>,</seperator>
+        </parameters>
+    </Element0>
+    <Element1>
+        <name>Filter_1</name>
+        <type>filter</type>
+        <source>Source_1</source>
+        <parameters>
+            <type>Points</type>
+            <targetfield>Temperature</targetfield>
+            <groupfields></groupfields>
+        </parameters>
+    </Element1>
+</Root>

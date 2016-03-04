@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7F0DA43A-E874-4C97-A442-B135178DD436</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DataAnalyst</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FBB0D0C432FFBDDEE635F13A376819729023DEBC</key>
+		<string>https://git.oschina.net/dataanalyst/DataAnalyst.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DataAnalyst.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FBB0D0C432FFBDDEE635F13A376819729023DEBC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://git.oschina.net/dataanalyst/DataAnalyst.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FBB0D0C432FFBDDEE635F13A376819729023DEBC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FBB0D0C432FFBDDEE635F13A376819729023DEBC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DataAnalyst</string>
+		</dict>
+	</array>
+</dict>
+</plist>

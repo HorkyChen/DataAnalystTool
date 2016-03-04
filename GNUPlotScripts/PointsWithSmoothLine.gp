@@ -1,0 +1,1 @@
+plot "$0" using 1:xticlabels(2) title "$1" with linespoints,"" using 1:xticlabels(2) title "smooth" smooth csplines

@@ -1,0 +1,1801 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87109090190FF33E00E1CBF0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710908F190FF33E00E1CBF0 /* Cocoa.framework */; };
+		8710909A190FF33E00E1CBF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87109098190FF33E00E1CBF0 /* InfoPlist.strings */; };
+		8710909C190FF33E00E1CBF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8710909B190FF33E00E1CBF0 /* main.m */; };
+		871090A0190FF33E00E1CBF0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8710909E190FF33E00E1CBF0 /* Credits.rtf */; };
+		871090A3190FF33E00E1CBF0 /* DataAnalystAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 871090A2190FF33E00E1CBF0 /* DataAnalystAppDelegate.m */; };
+		871090A6190FF33E00E1CBF0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 871090A4190FF33E00E1CBF0 /* MainMenu.xib */; };
+		871090A9190FF33E00E1CBF0 /* DataAnalyst.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 871090A7190FF33E00E1CBF0 /* DataAnalyst.xcdatamodeld */; };
+		871090B1190FF33E00E1CBF0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 871090B0190FF33E00E1CBF0 /* SenTestingKit.framework */; };
+		871090B2190FF33E00E1CBF0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710908F190FF33E00E1CBF0 /* Cocoa.framework */; };
+		871090BA190FF33E00E1CBF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 871090B8190FF33E00E1CBF0 /* InfoPlist.strings */; };
+		871090BD190FF33E00E1CBF0 /* DataAnalystTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 871090BC190FF33E00E1CBF0 /* DataAnalystTests.m */; };
+		871E7A7119AFDC6F00F755A8 /* ReportError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 871E7A6F19AFDC6F00F755A8 /* ReportError.cpp */; };
+		8723961519C9B5040064A760 /* general_plot_cmd.gp in Resources */ = {isa = PBXBuildFile; fileRef = 8723961419C9B5040064A760 /* general_plot_cmd.gp */; };
+		8726B55C19B91EFA0077293D /* LinePlotter.gp in Resources */ = {isa = PBXBuildFile; fileRef = 8726B55B19B91EFA0077293D /* LinePlotter.gp */; };
+		8726B55E19B921AF0077293D /* PointsWithSmoothLine.gp in Resources */ = {isa = PBXBuildFile; fileRef = 8726B55D19B921AF0077293D /* PointsWithSmoothLine.gp */; };
+		873ABCEB19C00FBF0024F79D /* BaseUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 873ABCE919C00FBF0024F79D /* BaseUtilities.cpp */; };
+		874031CD1954AEB900848A4F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 874031CC1954AEB900848A4F /* main.cpp */; };
+		874031CF1954AEB900848A4F /* Node_Tester.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 874031CE1954AEB900848A4F /* Node_Tester.1 */; };
+		8749728519964EDE005679E9 /* Collection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8785B47D191838D900403DED /* Collection.cpp */; };
+		8769F85B19D8389300CAFB24 /* GnuPlot_Lattice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8769F85919D8389300CAFB24 /* GnuPlot_Lattice.cpp */; };
+		877C6EDA19C3244F00FA1CCA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 877C6ED919C3244F00FA1CCA /* main.cpp */; };
+		877C6EDC19C3244F00FA1CCA /* ExportingTester.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 877C6EDB19C3244F00FA1CCA /* ExportingTester.1 */; };
+		8785B47F191838D900403DED /* Collection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8785B47D191838D900403DED /* Collection.cpp */; };
+		8785FA2619C3E0120001520F /* DataFlowElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878B940B19A38EDD007CA983 /* DataFlowElement.cpp */; };
+		8785FA2719C3E0120001520F /* DataFlowSourceElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878B941919A39F6C007CA983 /* DataFlowSourceElement.cpp */; };
+		8785FA2819C3E0870001520F /* CSVDataSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878B941019A39881007CA983 /* CSVDataSource.cpp */; };
+		8785FA2919C3E0870001520F /* DataFlowFilterElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878B941C19A39F78007CA983 /* DataFlowFilterElement.cpp */; };
+		8785FA2A19C3E0870001520F /* DataFlowPlotterElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878B941F19A39F84007CA983 /* DataFlowPlotterElement.cpp */; };
+		8785FA2B19C3E0870001520F /* FiveNumberFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87CD7A3B199BB300002DB252 /* FiveNumberFilter.cpp */; };
+		8785FA2C19C3E0870001520F /* BaseFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87CD7A43199BBAFC002DB252 /* BaseFilter.cpp */; };
+		8785FA2D19C3E0870001520F /* FilterFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87E1C49C19A249AF00A746CA /* FilterFactory.cpp */; };
+		8785FA2E19C3E0870001520F /* PercentageFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87B8F37319B5267200B8DA66 /* PercentageFilter.cpp */; };
+		8785FA2F19C3E0870001520F /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87ACF43319A054AE000CFD60 /* Node.cpp */; };
+		8785FA3019C3E0870001520F /* Collection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8785B47D191838D900403DED /* Collection.cpp */; };
+		8785FA3119C3E0870001520F /* CSVparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87BCD5F41997BE6000C6D479 /* CSVparser.cpp */; };
+		8785FA3219C3E0870001520F /* BaseUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 873ABCE919C00FBF0024F79D /* BaseUtilities.cpp */; };
+		8785FA3319C3E0A70001520F /* CppSQLite3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 879BBBDC199D054000D0AAB4 /* CppSQLite3.cpp */; };
+		8785FA3419C3E0A70001520F /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 87CD7A08199BA8D0002DB252 /* sqlite3.c */; };
+		8785FA3519C3E0E10001520F /* GNUPlot_Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87ACF43019A04E93000CFD60 /* GNUPlot_Controller.cpp */; };
+		8785FA3619C3E0E10001520F /* GNUPlotter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878663F4199F9E5800C188DC /* GNUPlotter.cpp */; };
+		8785FA3719C3E0E10001520F /* PlotterFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87E1C49F19A24E9900A746CA /* PlotterFactory.cpp */; };
+		8785FA3819C3E0F70001520F /* gnuplot_i.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878663D4199F953000C188DC /* gnuplot_i.cpp */; };
+		8785FA3919C3E10F0001520F /* TextOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878B77FC199D276C002850EF /* TextOutput.cpp */; };
+		8785FA3A19C3E10F0001520F /* ReportBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87A5FBA219BFAD07006ABD79 /* ReportBuilder.cpp */; };
+		8785FA3B19C3E10F0001520F /* ReportError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 871E7A6F19AFDC6F00F755A8 /* ReportError.cpp */; };
+		8785FA3C19C3E12B0001520F /* DrRobot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87987BF819153E3F00AAAE79 /* DrRobot.cpp */; };
+		87864CE319F0D92500A2447E /* ReportError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 871E7A6F19AFDC6F00F755A8 /* ReportError.cpp */; };
+		878663C7199F946300C188DC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878663C6199F946300C188DC /* main.cpp */; };
+		878663C9199F946300C188DC /* PlotTester.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 878663C8199F946300C188DC /* PlotTester.1 */; };
+		878663CD199F94E100C188DC /* Collection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8785B47D191838D900403DED /* Collection.cpp */; };
+		878663D6199F953000C188DC /* gnuplot_i.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878663D4199F953000C188DC /* gnuplot_i.cpp */; };
+		878663D7199F953000C188DC /* gnuplot_i.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878663D4199F953000C188DC /* gnuplot_i.cpp */; };
+		878663F6199F9E5800C188DC /* GNUPlotter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878663F4199F9E5800C188DC /* GNUPlotter.cpp */; };
+		878663F7199F9E5800C188DC /* GNUPlotter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878663F4199F9E5800C188DC /* GNUPlotter.cpp */; };
+		878B53FF19A9A1E600EEF063 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 878B53FE19A9A1E600EEF063 /* Background.png */; };
+		878B77FE199D276C002850EF /* TextOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878B77FC199D276C002850EF /* TextOutput.cpp */; };
+		878B77FF199D276C002850EF /* TextOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878B77FC199D276C002850EF /* TextOutput.cpp */; };
+		878B940D19A38EDD007CA983 /* DataFlowElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878B940B19A38EDD007CA983 /* DataFlowElement.cpp */; };
+		878B941219A39881007CA983 /* CSVDataSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878B941019A39881007CA983 /* CSVDataSource.cpp */; };
+		878B941B19A39F6C007CA983 /* DataFlowSourceElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878B941919A39F6C007CA983 /* DataFlowSourceElement.cpp */; };
+		878B941E19A39F78007CA983 /* DataFlowFilterElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878B941C19A39F78007CA983 /* DataFlowFilterElement.cpp */; };
+		878B942119A39F84007CA983 /* DataFlowPlotterElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878B941F19A39F84007CA983 /* DataFlowPlotterElement.cpp */; };
+		878FB87719CDE19C00CBB22D /* PiePlotter.gp in Resources */ = {isa = PBXBuildFile; fileRef = 878FB87619CDE19C00CBB22D /* PiePlotter.gp */; };
+		87987BEA19152FCF00AAAE79 /* DataAnalyst.icns in Resources */ = {isa = PBXBuildFile; fileRef = 87987BE919152FCF00AAAE79 /* DataAnalyst.icns */; };
+		87987BFA19153E3F00AAAE79 /* DrRobot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87987BF819153E3F00AAAE79 /* DrRobot.cpp */; };
+		879BBBDE199D054000D0AAB4 /* CppSQLite3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 879BBBDC199D054000D0AAB4 /* CppSQLite3.cpp */; };
+		879BBBDF199D060600D0AAB4 /* CppSQLite3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 879BBBDC199D054000D0AAB4 /* CppSQLite3.cpp */; };
+		879BBBE0199D15C900D0AAB4 /* CppSQLite3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 879BBBDC199D054000D0AAB4 /* CppSQLite3.cpp */; };
+		879BBBE1199D15E300D0AAB4 /* Collection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8785B47D191838D900403DED /* Collection.cpp */; };
+		87A4F08A19A2332D00856F19 /* DataAnalystWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A4F08919A2332D00856F19 /* DataAnalystWindowController.m */; };
+		87A5FBA419BFAD07006ABD79 /* ReportBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87A5FBA219BFAD07006ABD79 /* ReportBuilder.cpp */; };
+		87ACF43119A04E93000CFD60 /* GNUPlot_Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87ACF43019A04E93000CFD60 /* GNUPlot_Controller.cpp */; };
+		87ACF43219A04FC1000CFD60 /* GNUPlot_Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87ACF43019A04E93000CFD60 /* GNUPlot_Controller.cpp */; };
+		87ACF43419A054AE000CFD60 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87ACF43319A054AE000CFD60 /* Node.cpp */; };
+		87ACF43519A055FC000CFD60 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87ACF43319A054AE000CFD60 /* Node.cpp */; };
+		87ACF43619A05608000CFD60 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87ACF43319A054AE000CFD60 /* Node.cpp */; };
+		87ACF43719A05611000CFD60 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87ACF43319A054AE000CFD60 /* Node.cpp */; };
+		87ACF43819A05618000CFD60 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87ACF43319A054AE000CFD60 /* Node.cpp */; };
+		87B8F37519B5267200B8DA66 /* PercentageFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87B8F37319B5267200B8DA66 /* PercentageFilter.cpp */; };
+		87B9EAF419A0BA5F00E6CEA7 /* extension_functions.c in Sources */ = {isa = PBXBuildFile; fileRef = 87B9EAEB19A0BA0F00E6CEA7 /* extension_functions.c */; };
+		87BCD5F61997BE6000C6D479 /* CSVparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87BCD5F41997BE6000C6D479 /* CSVparser.cpp */; };
+		87CBE65E19CE81FD00985A64 /* GnuPlot_PieChart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87CBE65C19CE81FD00985A64 /* GnuPlot_PieChart.cpp */; };
+		87CD7A0C199BA8D0002DB252 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 87CD7A08199BA8D0002DB252 /* sqlite3.c */; };
+		87CD7A2F199BA957002DB252 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87CD7A2E199BA957002DB252 /* main.cpp */; };
+		87CD7A35199BA964002DB252 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 87CD7A08199BA8D0002DB252 /* sqlite3.c */; };
+		87CD7A38199BA9E8002DB252 /* CSVparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87BCD5F41997BE6000C6D479 /* CSVparser.cpp */; };
+		87CD7A3D199BB300002DB252 /* FiveNumberFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87CD7A3B199BB300002DB252 /* FiveNumberFilter.cpp */; };
+		87CD7A45199BBAFC002DB252 /* BaseFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87CD7A43199BBAFC002DB252 /* BaseFilter.cpp */; };
+		87CD7A4F199BBCAC002DB252 /* FilterTester.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 87CD7A4E199BBCAC002DB252 /* FilterTester.1 */; };
+		87CD7A53199BBCC0002DB252 /* FiveNumberFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87CD7A3B199BB300002DB252 /* FiveNumberFilter.cpp */; };
+		87CD7A54199BBCC0002DB252 /* BaseFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87CD7A43199BBAFC002DB252 /* BaseFilter.cpp */; };
+		87CD7A55199BBCC0002DB252 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 87CD7A08199BA8D0002DB252 /* sqlite3.c */; };
+		87DA239119A0FEC7008D0090 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87CD7A4C199BBCAC002DB252 /* main.cpp */; };
+		87E1C49E19A249AF00A746CA /* FilterFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87E1C49C19A249AF00A746CA /* FilterFactory.cpp */; };
+		87E1C4A119A24E9900A746CA /* PlotterFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87E1C49F19A24E9900A746CA /* PlotterFactory.cpp */; };
+		87E1C4A519A2527700A746CA /* DrRobotWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E1C4A419A2527700A746CA /* DrRobotWrapper.m */; };
+		87F26E451998FDF900C43A99 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87F26E441998FDF900C43A99 /* main.cpp */; };
+		87F26E471998FDF900C43A99 /* CSVTester.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 87F26E461998FDF900C43A99 /* CSVTester.1 */; };
+		87F26E4B1998FF6600C43A99 /* CSVparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87BCD5F41997BE6000C6D479 /* CSVparser.cpp */; };
+		87F26E531999048F00C43A99 /* Collection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8785B47D191838D900403DED /* Collection.cpp */; };
+		87FD8B9519A4D64400AA9382 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87FD8B9419A4D64400AA9382 /* main.cpp */; };
+		87FD8B9719A4D64400AA9382 /* TreeTester.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 87FD8B9619A4D64400AA9382 /* TreeTester.1 */; };
+		87FE953B19C94F89007349E6 /* gnuplot_init.gp in Resources */ = {isa = PBXBuildFile; fileRef = 87FE953A19C94F89007349E6 /* gnuplot_init.gp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		871090B3190FF33E00E1CBF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87109084190FF33E00E1CBF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8710908B190FF33E00E1CBF0;
+			remoteInfo = DataAnalyst;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		874031C81954AEB900848A4F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				874031CF1954AEB900848A4F /* Node_Tester.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		877C6ED519C3244F00FA1CCA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				877C6EDC19C3244F00FA1CCA /* ExportingTester.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		878663C2199F946300C188DC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				878663C9199F946300C188DC /* PlotTester.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		87CD7A2A199BA957002DB252 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		87CD7A48199BBCAC002DB252 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				87CD7A4F199BBCAC002DB252 /* FilterTester.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		87F26E401998FDF900C43A99 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				87F26E471998FDF900C43A99 /* CSVTester.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		87FD8B9019A4D64400AA9382 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				87FD8B9719A4D64400AA9382 /* TreeTester.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8710908C190FF33E00E1CBF0 /* DataAnalyst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataAnalyst.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8710908F190FF33E00E1CBF0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		87109092190FF33E00E1CBF0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		87109093190FF33E00E1CBF0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		87109094190FF33E00E1CBF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		87109097190FF33E00E1CBF0 /* DataAnalyst-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DataAnalyst-Info.plist"; sourceTree = "<group>"; };
+		87109099190FF33E00E1CBF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8710909B190FF33E00E1CBF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8710909D190FF33E00E1CBF0 /* DataAnalyst-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataAnalyst-Prefix.pch"; sourceTree = "<group>"; };
+		8710909F190FF33E00E1CBF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		871090A1190FF33E00E1CBF0 /* DataAnalystAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataAnalystAppDelegate.h; sourceTree = "<group>"; };
+		871090A2190FF33E00E1CBF0 /* DataAnalystAppDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = DataAnalystAppDelegate.m; sourceTree = "<group>"; };
+		871090A5190FF33E00E1CBF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		871090A8190FF33E00E1CBF0 /* DataAnalyst.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataAnalyst.xcdatamodel; sourceTree = "<group>"; };
+		871090AF190FF33E00E1CBF0 /* DataAnalystTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataAnalystTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		871090B0190FF33E00E1CBF0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		871090B7190FF33E00E1CBF0 /* DataAnalystTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DataAnalystTests-Info.plist"; sourceTree = "<group>"; };
+		871090B9190FF33E00E1CBF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		871090BB190FF33E00E1CBF0 /* DataAnalystTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataAnalystTests.h; sourceTree = "<group>"; };
+		871090BC190FF33E00E1CBF0 /* DataAnalystTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataAnalystTests.m; sourceTree = "<group>"; };
+		871E7A6F19AFDC6F00F755A8 /* ReportError.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReportError.cpp; sourceTree = "<group>"; };
+		871E7A7019AFDC6F00F755A8 /* ReportError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportError.h; sourceTree = "<group>"; };
+		8723961419C9B5040064A760 /* general_plot_cmd.gp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = general_plot_cmd.gp; sourceTree = "<group>"; };
+		8726B55B19B91EFA0077293D /* LinePlotter.gp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LinePlotter.gp; sourceTree = "<group>"; };
+		8726B55D19B921AF0077293D /* PointsWithSmoothLine.gp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PointsWithSmoothLine.gp; sourceTree = "<group>"; };
+		873ABCE919C00FBF0024F79D /* BaseUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseUtilities.cpp; sourceTree = "<group>"; };
+		873ABCEA19C00FBF0024F79D /* BaseUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseUtilities.h; sourceTree = "<group>"; };
+		874031CA1954AEB900848A4F /* Node_Tester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Node_Tester; sourceTree = BUILT_PRODUCTS_DIR; };
+		874031CC1954AEB900848A4F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		874031CE1954AEB900848A4F /* Node_Tester.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Node_Tester.1; sourceTree = "<group>"; };
+		8769F85919D8389300CAFB24 /* GnuPlot_Lattice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GnuPlot_Lattice.cpp; sourceTree = "<group>"; };
+		8769F85A19D8389300CAFB24 /* GnuPlot_Lattice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GnuPlot_Lattice.h; sourceTree = "<group>"; };
+		8771F1B51917D22A00F58F1E /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		877C6EA519C323A700FA1CCA /* assert_static.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = assert_static.h; sourceTree = "<group>"; };
+		877C6EA619C323A700FA1CCA /* scope_guard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scope_guard.h; sourceTree = "<group>"; };
+		877C6EA719C323A700FA1CCA /* stl_tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stl_tools.h; sourceTree = "<group>"; };
+		877C6EA819C323A700FA1CCA /* string_tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = string_tools.h; sourceTree = "<group>"; };
+		877C6EA919C323A700FA1CCA /* string_traits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = string_traits.h; sourceTree = "<group>"; };
+		877C6EAA19C323A700FA1CCA /* type_tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = type_tools.h; sourceTree = "<group>"; };
+		877C6EAB19C323A700FA1CCA /* type_traits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = type_traits.h; sourceTree = "<group>"; };
+		877C6EAC19C323A700FA1CCA /* utf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf.h; sourceTree = "<group>"; };
+		877C6EAE19C323A700FA1CCA /* bind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bind.h; sourceTree = "<group>"; };
+		877C6EAF19C323A700FA1CCA /* cvrt_struc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cvrt_struc.h; sourceTree = "<group>"; };
+		877C6EB019C323A700FA1CCA /* cvrt_text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cvrt_text.h; sourceTree = "<group>"; };
+		877C6EB119C323A700FA1CCA /* dom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dom.h; sourceTree = "<group>"; };
+		877C6EB219C323A700FA1CCA /* error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
+		877C6EB319C323A700FA1CCA /* io.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io.h; sourceTree = "<group>"; };
+		877C6EB419C323A700FA1CCA /* parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parser.h; sourceTree = "<group>"; };
+		877C6EB519C323A700FA1CCA /* unit_test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = unit_test.cpp; sourceTree = "<group>"; };
+		877C6EB619C323A700FA1CCA /* xml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xml.h; sourceTree = "<group>"; };
+		877C6ED719C3244F00FA1CCA /* ExportingTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExportingTester; sourceTree = BUILT_PRODUCTS_DIR; };
+		877C6ED919C3244F00FA1CCA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		877C6EDB19C3244F00FA1CCA /* ExportingTester.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ExportingTester.1; sourceTree = "<group>"; };
+		877CA09819C252C600FC84DF /* OrderByFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderByFilter.h; sourceTree = "<group>"; };
+		8785B47D191838D900403DED /* Collection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Collection.cpp; sourceTree = "<group>"; };
+		8785B47E191838D900403DED /* Collection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collection.h; sourceTree = "<group>"; };
+		8785FA2519C3D9EB0001520F /* ExportingFormat.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ExportingFormat.txt; sourceTree = "<group>"; };
+		878663C4199F946300C188DC /* PlotTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PlotTester; sourceTree = BUILT_PRODUCTS_DIR; };
+		878663C6199F946300C188DC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		878663C8199F946300C188DC /* PlotTester.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = PlotTester.1; sourceTree = "<group>"; };
+		878663D4199F953000C188DC /* gnuplot_i.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = gnuplot_i.cpp; sourceTree = "<group>"; };
+		878663D5199F953000C188DC /* gnuplot_i.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = gnuplot_i.h; sourceTree = "<group>"; };
+		878663D9199F954C00C188DC /* BasePlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePlot.h; sourceTree = "<group>"; };
+		878663F4199F9E5800C188DC /* GNUPlotter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GNUPlotter.cpp; sourceTree = "<group>"; };
+		878663F5199F9E5800C188DC /* GNUPlotter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNUPlotter.h; sourceTree = "<group>"; };
+		878663F9199FABD000C188DC /* GNUPlot_Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNUPlot_Controller.h; sourceTree = "<group>"; };
+		878663FC199FACDD00C188DC /* RefCounted.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RefCounted.h; sourceTree = "<group>"; };
+		878663FD199FAD1F00C188DC /* Assertions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Assertions.h; sourceTree = "<group>"; };
+		8787EF0419A6592800E1998B /* AverageFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AverageFilter.h; sourceTree = "<group>"; };
+		8787EF0519A65DD400E1998B /* PassFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassFilter.h; sourceTree = "<group>"; };
+		878B53FE19A9A1E600EEF063 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background.png; path = Design/Background.png; sourceTree = "<group>"; };
+		878B77FC199D276C002850EF /* TextOutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextOutput.cpp; sourceTree = "<group>"; };
+		878B77FD199D276C002850EF /* TextOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextOutput.h; sourceTree = "<group>"; };
+		878B940619A38AAF007CA983 /* tree_util.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tree_util.hh; sourceTree = "<group>"; };
+		878B940719A38AAF007CA983 /* tree.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tree.hh; sourceTree = "<group>"; };
+		878B940B19A38EDD007CA983 /* DataFlowElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataFlowElement.cpp; sourceTree = "<group>"; };
+		878B940C19A38EDD007CA983 /* DataFlowElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataFlowElement.h; sourceTree = "<group>"; };
+		878B940E19A39776007CA983 /* BaseConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseConfig.h; sourceTree = "<group>"; };
+		878B941019A39881007CA983 /* CSVDataSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CSVDataSource.cpp; sourceTree = "<group>"; };
+		878B941119A39881007CA983 /* CSVDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVDataSource.h; sourceTree = "<group>"; };
+		878B941719A398D2007CA983 /* BaseDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataSource.h; sourceTree = "<group>"; };
+		878B941919A39F6C007CA983 /* DataFlowSourceElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataFlowSourceElement.cpp; sourceTree = "<group>"; };
+		878B941A19A39F6C007CA983 /* DataFlowSourceElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataFlowSourceElement.h; sourceTree = "<group>"; };
+		878B941C19A39F78007CA983 /* DataFlowFilterElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataFlowFilterElement.cpp; sourceTree = "<group>"; };
+		878B941D19A39F78007CA983 /* DataFlowFilterElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataFlowFilterElement.h; sourceTree = "<group>"; };
+		878B941F19A39F84007CA983 /* DataFlowPlotterElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataFlowPlotterElement.cpp; sourceTree = "<group>"; };
+		878B942019A39F84007CA983 /* DataFlowPlotterElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataFlowPlotterElement.h; sourceTree = "<group>"; };
+		878FB87619CDE19C00CBB22D /* PiePlotter.gp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PiePlotter.gp; sourceTree = "<group>"; };
+		87987BE919152FCF00AAAE79 /* DataAnalyst.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = DataAnalyst.icns; sourceTree = "<group>"; };
+		87987BF819153E3F00AAAE79 /* DrRobot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrRobot.cpp; sourceTree = "<group>"; };
+		87987BF919153E3F00AAAE79 /* DrRobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrRobot.h; sourceTree = "<group>"; };
+		879BBBDC199D054000D0AAB4 /* CppSQLite3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CppSQLite3.cpp; sourceTree = "<group>"; };
+		879BBBDD199D054000D0AAB4 /* CppSQLite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CppSQLite3.h; sourceTree = "<group>"; };
+		87A4F08819A2332D00856F19 /* DataAnalystWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataAnalystWindowController.h; sourceTree = "<group>"; };
+		87A4F08919A2332D00856F19 /* DataAnalystWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataAnalystWindowController.m; sourceTree = "<group>"; };
+		87A5FBA219BFAD07006ABD79 /* ReportBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReportBuilder.cpp; sourceTree = "<group>"; };
+		87A5FBA319BFAD07006ABD79 /* ReportBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportBuilder.h; sourceTree = "<group>"; };
+		87ACF42B19A03E48000CFD60 /* PassRefPtr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassRefPtr.h; sourceTree = "<group>"; };
+		87ACF42C19A03F39000CFD60 /* Platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Platform.h; sourceTree = "<group>"; };
+		87ACF42E19A047DE000CFD60 /* RefPtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefPtr.h; sourceTree = "<group>"; };
+		87ACF43019A04E93000CFD60 /* GNUPlot_Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GNUPlot_Controller.cpp; sourceTree = "<group>"; };
+		87ACF43319A054AE000CFD60 /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		87B8F37319B5267200B8DA66 /* PercentageFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PercentageFilter.cpp; sourceTree = "<group>"; };
+		87B8F37419B5267200B8DA66 /* PercentageFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PercentageFilter.h; sourceTree = "<group>"; };
+		87B9EAEB19A0BA0F00E6CEA7 /* extension_functions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = extension_functions.c; sourceTree = "<group>"; };
+		87B9EAF019A0BA5600E6CEA7 /* libsqlite_extension.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libsqlite_extension.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		87BCD5F41997BE6000C6D479 /* CSVparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CSVparser.cpp; sourceTree = "<group>"; };
+		87BCD5F51997BE6000C6D479 /* CSVparser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CSVparser.hpp; sourceTree = "<group>"; };
+		87CBE65C19CE81FD00985A64 /* GnuPlot_PieChart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GnuPlot_PieChart.cpp; sourceTree = "<group>"; };
+		87CBE65D19CE81FD00985A64 /* GnuPlot_PieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GnuPlot_PieChart.h; sourceTree = "<group>"; };
+		87CD7A07199BA8D0002DB252 /* shell.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shell.c; sourceTree = "<group>"; };
+		87CD7A08199BA8D0002DB252 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+		87CD7A09199BA8D0002DB252 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		87CD7A0A199BA8D0002DB252 /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3ext.h; sourceTree = "<group>"; };
+		87CD7A2C199BA957002DB252 /* SQLiteTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SQLiteTester; sourceTree = BUILT_PRODUCTS_DIR; };
+		87CD7A2E199BA957002DB252 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		87CD7A3B199BB300002DB252 /* FiveNumberFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FiveNumberFilter.cpp; sourceTree = "<group>"; };
+		87CD7A3C199BB300002DB252 /* FiveNumberFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveNumberFilter.h; sourceTree = "<group>"; };
+		87CD7A43199BBAFC002DB252 /* BaseFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseFilter.cpp; sourceTree = "<group>"; };
+		87CD7A44199BBAFC002DB252 /* BaseFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFilter.h; sourceTree = "<group>"; };
+		87CD7A4A199BBCAC002DB252 /* FilterTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FilterTester; sourceTree = BUILT_PRODUCTS_DIR; };
+		87CD7A4C199BBCAC002DB252 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		87CD7A4E199BBCAC002DB252 /* FilterTester.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = FilterTester.1; sourceTree = "<group>"; };
+		87E1C49C19A249AF00A746CA /* FilterFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FilterFactory.cpp; sourceTree = "<group>"; };
+		87E1C49D19A249AF00A746CA /* FilterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterFactory.h; sourceTree = "<group>"; };
+		87E1C49F19A24E9900A746CA /* PlotterFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlotterFactory.cpp; sourceTree = "<group>"; };
+		87E1C4A019A24E9900A746CA /* PlotterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlotterFactory.h; sourceTree = "<group>"; };
+		87E1C4A319A2527700A746CA /* DrRobotWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrRobotWrapper.h; sourceTree = "<group>"; };
+		87E1C4A419A2527700A746CA /* DrRobotWrapper.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = DrRobotWrapper.m; sourceTree = "<group>"; };
+		87F236A919BD0D770018FECC /* SmoothLinePlotter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmoothLinePlotter.h; sourceTree = "<group>"; };
+		87F26E421998FDF900C43A99 /* CSVTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CSVTester; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F26E441998FDF900C43A99 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		87F26E461998FDF900C43A99 /* CSVTester.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CSVTester.1; sourceTree = "<group>"; };
+		87F26E4F1999017100C43A99 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		87FD8B9219A4D64400AA9382 /* TreeTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TreeTester; sourceTree = BUILT_PRODUCTS_DIR; };
+		87FD8B9419A4D64400AA9382 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		87FD8B9619A4D64400AA9382 /* TreeTester.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TreeTester.1; sourceTree = "<group>"; };
+		87FD8B9B19A4EC3300AA9382 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		87FE953A19C94F89007349E6 /* gnuplot_init.gp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gnuplot_init.gp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87109089190FF33E00E1CBF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87109090190FF33E00E1CBF0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		871090AB190FF33E00E1CBF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				871090B1190FF33E00E1CBF0 /* SenTestingKit.framework in Frameworks */,
+				871090B2190FF33E00E1CBF0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		874031C71954AEB900848A4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		877C6ED419C3244F00FA1CCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		878663C1199F946300C188DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87B9EAED19A0BA5600E6CEA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87CD7A29199BA957002DB252 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87CD7A47199BBCAC002DB252 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F26E3F1998FDF900C43A99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87FD8B8F19A4D64400AA9382 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87109083190FF33E00E1CBF0 = {
+			isa = PBXGroup;
+			children = (
+				8726B55A19B91ED60077293D /* GNUPlotScripts */,
+				87987BE919152FCF00AAAE79 /* DataAnalyst.icns */,
+				878B53FE19A9A1E600EEF063 /* Background.png */,
+				87109095190FF33E00E1CBF0 /* DataAnalyst */,
+				871090B5190FF33E00E1CBF0 /* DataAnalystTests */,
+				874031CB1954AEB900848A4F /* Node_Tester */,
+				87F26E431998FDF900C43A99 /* CSVTester */,
+				87CD7A2D199BA957002DB252 /* SQLiteTester */,
+				87CD7A4B199BBCAC002DB252 /* FilterTester */,
+				878663C5199F946300C188DC /* PlotTester */,
+				87FD8B9319A4D64400AA9382 /* TreeTester */,
+				877C6ED819C3244F00FA1CCA /* ExportingTester */,
+				8710908E190FF33E00E1CBF0 /* Frameworks */,
+				8710908D190FF33E00E1CBF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8710908D190FF33E00E1CBF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8710908C190FF33E00E1CBF0 /* DataAnalyst.app */,
+				871090AF190FF33E00E1CBF0 /* DataAnalystTests.octest */,
+				874031CA1954AEB900848A4F /* Node_Tester */,
+				87F26E421998FDF900C43A99 /* CSVTester */,
+				87CD7A2C199BA957002DB252 /* SQLiteTester */,
+				87CD7A4A199BBCAC002DB252 /* FilterTester */,
+				878663C4199F946300C188DC /* PlotTester */,
+				87B9EAF019A0BA5600E6CEA7 /* libsqlite_extension.dylib */,
+				87FD8B9219A4D64400AA9382 /* TreeTester */,
+				877C6ED719C3244F00FA1CCA /* ExportingTester */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8710908E190FF33E00E1CBF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8710908F190FF33E00E1CBF0 /* Cocoa.framework */,
+				871090B0190FF33E00E1CBF0 /* SenTestingKit.framework */,
+				87109091190FF33E00E1CBF0 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87109091190FF33E00E1CBF0 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87109092190FF33E00E1CBF0 /* AppKit.framework */,
+				87109093190FF33E00E1CBF0 /* CoreData.framework */,
+				87109094190FF33E00E1CBF0 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		87109095190FF33E00E1CBF0 /* DataAnalyst */ = {
+			isa = PBXGroup;
+			children = (
+				87987BF319153E1F00AAAE79 /* DrRobot */,
+				871090A1190FF33E00E1CBF0 /* DataAnalystAppDelegate.h */,
+				871090A2190FF33E00E1CBF0 /* DataAnalystAppDelegate.m */,
+				87A4F08819A2332D00856F19 /* DataAnalystWindowController.h */,
+				87A4F08919A2332D00856F19 /* DataAnalystWindowController.m */,
+				871090A4190FF33E00E1CBF0 /* MainMenu.xib */,
+				871090A7190FF33E00E1CBF0 /* DataAnalyst.xcdatamodeld */,
+				87109096190FF33E00E1CBF0 /* Supporting Files */,
+			);
+			path = DataAnalyst;
+			sourceTree = "<group>";
+		};
+		87109096190FF33E00E1CBF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87109097190FF33E00E1CBF0 /* DataAnalyst-Info.plist */,
+				87109098190FF33E00E1CBF0 /* InfoPlist.strings */,
+				8710909B190FF33E00E1CBF0 /* main.m */,
+				8710909D190FF33E00E1CBF0 /* DataAnalyst-Prefix.pch */,
+				8710909E190FF33E00E1CBF0 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		871090B5190FF33E00E1CBF0 /* DataAnalystTests */ = {
+			isa = PBXGroup;
+			children = (
+				871090BB190FF33E00E1CBF0 /* DataAnalystTests.h */,
+				871090BC190FF33E00E1CBF0 /* DataAnalystTests.m */,
+				871090B6190FF33E00E1CBF0 /* Supporting Files */,
+			);
+			path = DataAnalystTests;
+			sourceTree = "<group>";
+		};
+		871090B6190FF33E00E1CBF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				871090B7190FF33E00E1CBF0 /* DataAnalystTests-Info.plist */,
+				871090B8190FF33E00E1CBF0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8726B55A19B91ED60077293D /* GNUPlotScripts */ = {
+			isa = PBXGroup;
+			children = (
+				8726B55B19B91EFA0077293D /* LinePlotter.gp */,
+				8726B55D19B921AF0077293D /* PointsWithSmoothLine.gp */,
+				87FE953A19C94F89007349E6 /* gnuplot_init.gp */,
+				8723961419C9B5040064A760 /* general_plot_cmd.gp */,
+				878FB87619CDE19C00CBB22D /* PiePlotter.gp */,
+			);
+			path = GNUPlotScripts;
+			sourceTree = "<group>";
+		};
+		874031CB1954AEB900848A4F /* Node_Tester */ = {
+			isa = PBXGroup;
+			children = (
+				874031CC1954AEB900848A4F /* main.cpp */,
+				874031CE1954AEB900848A4F /* Node_Tester.1 */,
+			);
+			path = Node_Tester;
+			sourceTree = "<group>";
+		};
+		8771F1B31917D1C100F58F1E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8771F1B51917D22A00F58F1E /* Node.h */,
+				87ACF43319A054AE000CFD60 /* Node.cpp */,
+				8785B47D191838D900403DED /* Collection.cpp */,
+				8785B47E191838D900403DED /* Collection.h */,
+				878663FC199FACDD00C188DC /* RefCounted.h */,
+				878663FD199FAD1F00C188DC /* Assertions.h */,
+				87ACF42B19A03E48000CFD60 /* PassRefPtr.h */,
+				87ACF42C19A03F39000CFD60 /* Platform.h */,
+				87ACF42E19A047DE000CFD60 /* RefPtr.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		877C6EA319C323A700FA1CCA /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				877C6EA419C323A700FA1CCA /* zen */,
+				877C6EAD19C323A700FA1CCA /* zenxml */,
+			);
+			path = XML;
+			sourceTree = "<group>";
+		};
+		877C6EA419C323A700FA1CCA /* zen */ = {
+			isa = PBXGroup;
+			children = (
+				877C6EA519C323A700FA1CCA /* assert_static.h */,
+				877C6EA619C323A700FA1CCA /* scope_guard.h */,
+				877C6EA719C323A700FA1CCA /* stl_tools.h */,
+				877C6EA819C323A700FA1CCA /* string_tools.h */,
+				877C6EA919C323A700FA1CCA /* string_traits.h */,
+				877C6EAA19C323A700FA1CCA /* type_tools.h */,
+				877C6EAB19C323A700FA1CCA /* type_traits.h */,
+				877C6EAC19C323A700FA1CCA /* utf.h */,
+			);
+			path = zen;
+			sourceTree = "<group>";
+		};
+		877C6EAD19C323A700FA1CCA /* zenxml */ = {
+			isa = PBXGroup;
+			children = (
+				877C6EAE19C323A700FA1CCA /* bind.h */,
+				877C6EAF19C323A700FA1CCA /* cvrt_struc.h */,
+				877C6EB019C323A700FA1CCA /* cvrt_text.h */,
+				877C6EB119C323A700FA1CCA /* dom.h */,
+				877C6EB219C323A700FA1CCA /* error.h */,
+				877C6EB319C323A700FA1CCA /* io.h */,
+				877C6EB419C323A700FA1CCA /* parser.h */,
+				877C6EB519C323A700FA1CCA /* unit_test.cpp */,
+				877C6EB619C323A700FA1CCA /* xml.h */,
+			);
+			path = zenxml;
+			sourceTree = "<group>";
+		};
+		877C6ED819C3244F00FA1CCA /* ExportingTester */ = {
+			isa = PBXGroup;
+			children = (
+				877C6ED919C3244F00FA1CCA /* main.cpp */,
+				877C6EDB19C3244F00FA1CCA /* ExportingTester.1 */,
+				8785FA2519C3D9EB0001520F /* ExportingFormat.txt */,
+			);
+			path = ExportingTester;
+			sourceTree = "<group>";
+		};
+		878663C5199F946300C188DC /* PlotTester */ = {
+			isa = PBXGroup;
+			children = (
+				878663C6199F946300C188DC /* main.cpp */,
+				878663C8199F946300C188DC /* PlotTester.1 */,
+			);
+			path = PlotTester;
+			sourceTree = "<group>";
+		};
+		878663D2199F953000C188DC /* Plot */ = {
+			isa = PBXGroup;
+			children = (
+				878663D3199F953000C188DC /* gnuplot */,
+			);
+			path = Plot;
+			sourceTree = "<group>";
+		};
+		878663D3199F953000C188DC /* gnuplot */ = {
+			isa = PBXGroup;
+			children = (
+				878663D4199F953000C188DC /* gnuplot_i.cpp */,
+				878663D5199F953000C188DC /* gnuplot_i.h */,
+				878663F9199FABD000C188DC /* GNUPlot_Controller.h */,
+				87ACF43019A04E93000CFD60 /* GNUPlot_Controller.cpp */,
+			);
+			path = gnuplot;
+			sourceTree = "<group>";
+		};
+		878B77FB199D2756002850EF /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				878B77FC199D276C002850EF /* TextOutput.cpp */,
+				878B77FD199D276C002850EF /* TextOutput.h */,
+				878663D9199F954C00C188DC /* BasePlot.h */,
+				878663F4199F9E5800C188DC /* GNUPlotter.cpp */,
+				878663F5199F9E5800C188DC /* GNUPlotter.h */,
+				87E1C49F19A24E9900A746CA /* PlotterFactory.cpp */,
+				87E1C4A019A24E9900A746CA /* PlotterFactory.h */,
+				87F236A919BD0D770018FECC /* SmoothLinePlotter.h */,
+				87A5FBA219BFAD07006ABD79 /* ReportBuilder.cpp */,
+				87A5FBA319BFAD07006ABD79 /* ReportBuilder.h */,
+				87CBE65C19CE81FD00985A64 /* GnuPlot_PieChart.cpp */,
+				87CBE65D19CE81FD00985A64 /* GnuPlot_PieChart.h */,
+				8769F85919D8389300CAFB24 /* GnuPlot_Lattice.cpp */,
+				8769F85A19D8389300CAFB24 /* GnuPlot_Lattice.h */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		878B940519A38A83007CA983 /* DataFlow */ = {
+			isa = PBXGroup;
+			children = (
+				878B940619A38AAF007CA983 /* tree_util.hh */,
+				878B940719A38AAF007CA983 /* tree.hh */,
+				878B940B19A38EDD007CA983 /* DataFlowElement.cpp */,
+				878B940C19A38EDD007CA983 /* DataFlowElement.h */,
+				878B941919A39F6C007CA983 /* DataFlowSourceElement.cpp */,
+				878B941A19A39F6C007CA983 /* DataFlowSourceElement.h */,
+				878B941C19A39F78007CA983 /* DataFlowFilterElement.cpp */,
+				878B941D19A39F78007CA983 /* DataFlowFilterElement.h */,
+				878B941F19A39F84007CA983 /* DataFlowPlotterElement.cpp */,
+				878B942019A39F84007CA983 /* DataFlowPlotterElement.h */,
+			);
+			path = DataFlow;
+			sourceTree = "<group>";
+		};
+		878B940F19A3985B007CA983 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				878B941019A39881007CA983 /* CSVDataSource.cpp */,
+				878B941119A39881007CA983 /* CSVDataSource.h */,
+				878B941719A398D2007CA983 /* BaseDataSource.h */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		87987BF319153E1F00AAAE79 /* DrRobot */ = {
+			isa = PBXGroup;
+			children = (
+				878B940F19A3985B007CA983 /* DataSource */,
+				878B940519A38A83007CA983 /* DataFlow */,
+				87E1C49819A2450800A746CA /* Wrapper */,
+				878663D2199F953000C188DC /* Plot */,
+				878B77FB199D2756002850EF /* Output */,
+				87CD7A3A199BB2DA002DB252 /* Filter */,
+				87CD7A06199BA8D0002DB252 /* sqlite3 */,
+				8771F1B31917D1C100F58F1E /* Base */,
+				87987BF419153E1F00AAAE79 /* Utilities */,
+				87987BF819153E3F00AAAE79 /* DrRobot.cpp */,
+				87987BF919153E3F00AAAE79 /* DrRobot.h */,
+				878B940E19A39776007CA983 /* BaseConfig.h */,
+				871E7A6F19AFDC6F00F755A8 /* ReportError.cpp */,
+				871E7A7019AFDC6F00F755A8 /* ReportError.h */,
+			);
+			path = DrRobot;
+			sourceTree = "<group>";
+		};
+		87987BF419153E1F00AAAE79 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				877C6EA319C323A700FA1CCA /* XML */,
+				87BCD5F41997BE6000C6D479 /* CSVparser.cpp */,
+				87BCD5F51997BE6000C6D479 /* CSVparser.hpp */,
+				87F26E4F1999017100C43A99 /* DataSource.h */,
+				873ABCE919C00FBF0024F79D /* BaseUtilities.cpp */,
+				873ABCEA19C00FBF0024F79D /* BaseUtilities.h */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		87CD7A06199BA8D0002DB252 /* sqlite3 */ = {
+			isa = PBXGroup;
+			children = (
+				87B9EAEB19A0BA0F00E6CEA7 /* extension_functions.c */,
+				879BBBDC199D054000D0AAB4 /* CppSQLite3.cpp */,
+				879BBBDD199D054000D0AAB4 /* CppSQLite3.h */,
+				87CD7A07199BA8D0002DB252 /* shell.c */,
+				87CD7A08199BA8D0002DB252 /* sqlite3.c */,
+				87CD7A09199BA8D0002DB252 /* sqlite3.h */,
+				87CD7A0A199BA8D0002DB252 /* sqlite3ext.h */,
+			);
+			path = sqlite3;
+			sourceTree = "<group>";
+		};
+		87CD7A2D199BA957002DB252 /* SQLiteTester */ = {
+			isa = PBXGroup;
+			children = (
+				87CD7A2E199BA957002DB252 /* main.cpp */,
+			);
+			path = SQLiteTester;
+			sourceTree = "<group>";
+		};
+		87CD7A3A199BB2DA002DB252 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				87CD7A3B199BB300002DB252 /* FiveNumberFilter.cpp */,
+				87CD7A3C199BB300002DB252 /* FiveNumberFilter.h */,
+				87CD7A43199BBAFC002DB252 /* BaseFilter.cpp */,
+				87CD7A44199BBAFC002DB252 /* BaseFilter.h */,
+				87E1C49C19A249AF00A746CA /* FilterFactory.cpp */,
+				87E1C49D19A249AF00A746CA /* FilterFactory.h */,
+				8787EF0419A6592800E1998B /* AverageFilter.h */,
+				8787EF0519A65DD400E1998B /* PassFilter.h */,
+				87B8F37319B5267200B8DA66 /* PercentageFilter.cpp */,
+				87B8F37419B5267200B8DA66 /* PercentageFilter.h */,
+				877CA09819C252C600FC84DF /* OrderByFilter.h */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		87CD7A4B199BBCAC002DB252 /* FilterTester */ = {
+			isa = PBXGroup;
+			children = (
+				87CD7A4C199BBCAC002DB252 /* main.cpp */,
+				87CD7A4E199BBCAC002DB252 /* FilterTester.1 */,
+			);
+			path = FilterTester;
+			sourceTree = "<group>";
+		};
+		87E1C49819A2450800A746CA /* Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				87E1C4A219A2527700A746CA /* MacOS */,
+			);
+			path = Wrapper;
+			sourceTree = "<group>";
+		};
+		87E1C4A219A2527700A746CA /* MacOS */ = {
+			isa = PBXGroup;
+			children = (
+				87E1C4A319A2527700A746CA /* DrRobotWrapper.h */,
+				87E1C4A419A2527700A746CA /* DrRobotWrapper.m */,
+			);
+			path = MacOS;
+			sourceTree = "<group>";
+		};
+		87F26E431998FDF900C43A99 /* CSVTester */ = {
+			isa = PBXGroup;
+			children = (
+				87F26E441998FDF900C43A99 /* main.cpp */,
+				87F26E461998FDF900C43A99 /* CSVTester.1 */,
+			);
+			path = CSVTester;
+			sourceTree = "<group>";
+		};
+		87FD8B9319A4D64400AA9382 /* TreeTester */ = {
+			isa = PBXGroup;
+			children = (
+				87FD8B9419A4D64400AA9382 /* main.cpp */,
+				87FD8B9619A4D64400AA9382 /* TreeTester.1 */,
+				87FD8B9B19A4EC3300AA9382 /* Data.h */,
+			);
+			path = TreeTester;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		87B9EAEE19A0BA5600E6CEA7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8710908B190FF33E00E1CBF0 /* DataAnalyst */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 871090C0190FF33E00E1CBF0 /* Build configuration list for PBXNativeTarget "DataAnalyst" */;
+			buildPhases = (
+				87109088190FF33E00E1CBF0 /* Sources */,
+				87109089190FF33E00E1CBF0 /* Frameworks */,
+				8710908A190FF33E00E1CBF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataAnalyst;
+			productName = DataAnalyst;
+			productReference = 8710908C190FF33E00E1CBF0 /* DataAnalyst.app */;
+			productType = "com.apple.product-type.application";
+		};
+		871090AE190FF33E00E1CBF0 /* DataAnalystTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 871090C3190FF33E00E1CBF0 /* Build configuration list for PBXNativeTarget "DataAnalystTests" */;
+			buildPhases = (
+				871090AA190FF33E00E1CBF0 /* Sources */,
+				871090AB190FF33E00E1CBF0 /* Frameworks */,
+				871090AC190FF33E00E1CBF0 /* Resources */,
+				871090AD190FF33E00E1CBF0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				871090B4190FF33E00E1CBF0 /* PBXTargetDependency */,
+			);
+			name = DataAnalystTests;
+			productName = DataAnalystTests;
+			productReference = 871090AF190FF33E00E1CBF0 /* DataAnalystTests.octest */;
+			productType = "com.apple.product-type.bundle.ocunit-test";
+		};
+		874031C91954AEB900848A4F /* Node_Tester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 874031D21954AEB900848A4F /* Build configuration list for PBXNativeTarget "Node_Tester" */;
+			buildPhases = (
+				874031C61954AEB900848A4F /* Sources */,
+				874031C71954AEB900848A4F /* Frameworks */,
+				874031C81954AEB900848A4F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Node_Tester;
+			productName = Node_Tester;
+			productReference = 874031CA1954AEB900848A4F /* Node_Tester */;
+			productType = "com.apple.product-type.tool";
+		};
+		877C6ED619C3244F00FA1CCA /* ExportingTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 877C6EDD19C3244F00FA1CCA /* Build configuration list for PBXNativeTarget "ExportingTester" */;
+			buildPhases = (
+				877C6ED319C3244F00FA1CCA /* Sources */,
+				877C6ED419C3244F00FA1CCA /* Frameworks */,
+				877C6ED519C3244F00FA1CCA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExportingTester;
+			productName = ExportingTester;
+			productReference = 877C6ED719C3244F00FA1CCA /* ExportingTester */;
+			productType = "com.apple.product-type.tool";
+		};
+		878663C3199F946300C188DC /* PlotTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 878663CC199F946300C188DC /* Build configuration list for PBXNativeTarget "PlotTester" */;
+			buildPhases = (
+				878663C0199F946300C188DC /* Sources */,
+				878663C1199F946300C188DC /* Frameworks */,
+				878663C2199F946300C188DC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlotTester;
+			productName = PlotTester;
+			productReference = 878663C4199F946300C188DC /* PlotTester */;
+			productType = "com.apple.product-type.tool";
+		};
+		87B9EAEF19A0BA5600E6CEA7 /* sqlite_extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87B9EAF119A0BA5600E6CEA7 /* Build configuration list for PBXNativeTarget "sqlite_extension" */;
+			buildPhases = (
+				87B9EAEC19A0BA5600E6CEA7 /* Sources */,
+				87B9EAED19A0BA5600E6CEA7 /* Frameworks */,
+				87B9EAEE19A0BA5600E6CEA7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sqlite_extension;
+			productName = sqlite_extension;
+			productReference = 87B9EAF019A0BA5600E6CEA7 /* libsqlite_extension.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		87CD7A2B199BA957002DB252 /* SQLiteTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87CD7A32199BA957002DB252 /* Build configuration list for PBXNativeTarget "SQLiteTester" */;
+			buildPhases = (
+				87CD7A28199BA957002DB252 /* Sources */,
+				87CD7A29199BA957002DB252 /* Frameworks */,
+				87CD7A2A199BA957002DB252 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLiteTester;
+			productName = SQLiteTester;
+			productReference = 87CD7A2C199BA957002DB252 /* SQLiteTester */;
+			productType = "com.apple.product-type.tool";
+		};
+		87CD7A49199BBCAC002DB252 /* FilterTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87CD7A50199BBCAC002DB252 /* Build configuration list for PBXNativeTarget "FilterTester" */;
+			buildPhases = (
+				87CD7A46199BBCAC002DB252 /* Sources */,
+				87CD7A47199BBCAC002DB252 /* Frameworks */,
+				87CD7A48199BBCAC002DB252 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FilterTester;
+			productName = FilterTester;
+			productReference = 87CD7A4A199BBCAC002DB252 /* FilterTester */;
+			productType = "com.apple.product-type.tool";
+		};
+		87F26E411998FDF900C43A99 /* CSVTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87F26E4A1998FDF900C43A99 /* Build configuration list for PBXNativeTarget "CSVTester" */;
+			buildPhases = (
+				87F26E3E1998FDF900C43A99 /* Sources */,
+				87F26E3F1998FDF900C43A99 /* Frameworks */,
+				87F26E401998FDF900C43A99 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSVTester;
+			productName = CSVTester;
+			productReference = 87F26E421998FDF900C43A99 /* CSVTester */;
+			productType = "com.apple.product-type.tool";
+		};
+		87FD8B9119A4D64400AA9382 /* TreeTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87FD8B9A19A4D64400AA9382 /* Build configuration list for PBXNativeTarget "TreeTester" */;
+			buildPhases = (
+				87FD8B8E19A4D64400AA9382 /* Sources */,
+				87FD8B8F19A4D64400AA9382 /* Frameworks */,
+				87FD8B9019A4D64400AA9382 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TreeTester;
+			productName = TreeTester;
+			productReference = 87FD8B9219A4D64400AA9382 /* TreeTester */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87109084190FF33E00E1CBF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DataAnalyst;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = PoxenStudio;
+			};
+			buildConfigurationList = 87109087190FF33E00E1CBF0 /* Build configuration list for PBXProject "DataAnalyst" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 87109083190FF33E00E1CBF0;
+			productRefGroup = 8710908D190FF33E00E1CBF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8710908B190FF33E00E1CBF0 /* DataAnalyst */,
+				871090AE190FF33E00E1CBF0 /* DataAnalystTests */,
+				874031C91954AEB900848A4F /* Node_Tester */,
+				87F26E411998FDF900C43A99 /* CSVTester */,
+				87CD7A2B199BA957002DB252 /* SQLiteTester */,
+				87CD7A49199BBCAC002DB252 /* FilterTester */,
+				878663C3199F946300C188DC /* PlotTester */,
+				87B9EAEF19A0BA5600E6CEA7 /* sqlite_extension */,
+				87FD8B9119A4D64400AA9382 /* TreeTester */,
+				877C6ED619C3244F00FA1CCA /* ExportingTester */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8710908A190FF33E00E1CBF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87FE953B19C94F89007349E6 /* gnuplot_init.gp in Resources */,
+				8710909A190FF33E00E1CBF0 /* InfoPlist.strings in Resources */,
+				871090A0190FF33E00E1CBF0 /* Credits.rtf in Resources */,
+				878B53FF19A9A1E600EEF063 /* Background.png in Resources */,
+				8723961519C9B5040064A760 /* general_plot_cmd.gp in Resources */,
+				8726B55C19B91EFA0077293D /* LinePlotter.gp in Resources */,
+				878FB87719CDE19C00CBB22D /* PiePlotter.gp in Resources */,
+				871090A6190FF33E00E1CBF0 /* MainMenu.xib in Resources */,
+				87987BEA19152FCF00AAAE79 /* DataAnalyst.icns in Resources */,
+				8726B55E19B921AF0077293D /* PointsWithSmoothLine.gp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		871090AC190FF33E00E1CBF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				871090BA190FF33E00E1CBF0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		871090AD190FF33E00E1CBF0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87109088190FF33E00E1CBF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				878B941E19A39F78007CA983 /* DataFlowFilterElement.cpp in Sources */,
+				87B8F37519B5267200B8DA66 /* PercentageFilter.cpp in Sources */,
+				871E7A7119AFDC6F00F755A8 /* ReportError.cpp in Sources */,
+				878B942119A39F84007CA983 /* DataFlowPlotterElement.cpp in Sources */,
+				87CD7A3D199BB300002DB252 /* FiveNumberFilter.cpp in Sources */,
+				87CBE65E19CE81FD00985A64 /* GnuPlot_PieChart.cpp in Sources */,
+				873ABCEB19C00FBF0024F79D /* BaseUtilities.cpp in Sources */,
+				87ACF43119A04E93000CFD60 /* GNUPlot_Controller.cpp in Sources */,
+				878B77FE199D276C002850EF /* TextOutput.cpp in Sources */,
+				8710909C190FF33E00E1CBF0 /* main.m in Sources */,
+				87BCD5F61997BE6000C6D479 /* CSVparser.cpp in Sources */,
+				878663F6199F9E5800C188DC /* GNUPlotter.cpp in Sources */,
+				87A5FBA419BFAD07006ABD79 /* ReportBuilder.cpp in Sources */,
+				871090A3190FF33E00E1CBF0 /* DataAnalystAppDelegate.m in Sources */,
+				871090A9190FF33E00E1CBF0 /* DataAnalyst.xcdatamodeld in Sources */,
+				8785B47F191838D900403DED /* Collection.cpp in Sources */,
+				87987BFA19153E3F00AAAE79 /* DrRobot.cpp in Sources */,
+				87E1C4A519A2527700A746CA /* DrRobotWrapper.m in Sources */,
+				878B941219A39881007CA983 /* CSVDataSource.cpp in Sources */,
+				87E1C49E19A249AF00A746CA /* FilterFactory.cpp in Sources */,
+				87A4F08A19A2332D00856F19 /* DataAnalystWindowController.m in Sources */,
+				87CD7A45199BBAFC002DB252 /* BaseFilter.cpp in Sources */,
+				87CD7A0C199BA8D0002DB252 /* sqlite3.c in Sources */,
+				879BBBDE199D054000D0AAB4 /* CppSQLite3.cpp in Sources */,
+				878B940D19A38EDD007CA983 /* DataFlowElement.cpp in Sources */,
+				878663D6199F953000C188DC /* gnuplot_i.cpp in Sources */,
+				878B941B19A39F6C007CA983 /* DataFlowSourceElement.cpp in Sources */,
+				87ACF43419A054AE000CFD60 /* Node.cpp in Sources */,
+				8769F85B19D8389300CAFB24 /* GnuPlot_Lattice.cpp in Sources */,
+				87E1C4A119A24E9900A746CA /* PlotterFactory.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		871090AA190FF33E00E1CBF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				871090BD190FF33E00E1CBF0 /* DataAnalystTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		874031C61954AEB900848A4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87ACF43819A05618000CFD60 /* Node.cpp in Sources */,
+				8749728519964EDE005679E9 /* Collection.cpp in Sources */,
+				874031CD1954AEB900848A4F /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		877C6ED319C3244F00FA1CCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8785FA3C19C3E12B0001520F /* DrRobot.cpp in Sources */,
+				8785FA3919C3E10F0001520F /* TextOutput.cpp in Sources */,
+				8785FA3A19C3E10F0001520F /* ReportBuilder.cpp in Sources */,
+				8785FA3B19C3E10F0001520F /* ReportError.cpp in Sources */,
+				8785FA3819C3E0F70001520F /* gnuplot_i.cpp in Sources */,
+				8785FA3519C3E0E10001520F /* GNUPlot_Controller.cpp in Sources */,
+				8785FA3619C3E0E10001520F /* GNUPlotter.cpp in Sources */,
+				8785FA3719C3E0E10001520F /* PlotterFactory.cpp in Sources */,
+				8785FA3319C3E0A70001520F /* CppSQLite3.cpp in Sources */,
+				8785FA3419C3E0A70001520F /* sqlite3.c in Sources */,
+				8785FA2819C3E0870001520F /* CSVDataSource.cpp in Sources */,
+				8785FA2919C3E0870001520F /* DataFlowFilterElement.cpp in Sources */,
+				8785FA2A19C3E0870001520F /* DataFlowPlotterElement.cpp in Sources */,
+				8785FA2B19C3E0870001520F /* FiveNumberFilter.cpp in Sources */,
+				8785FA2C19C3E0870001520F /* BaseFilter.cpp in Sources */,
+				8785FA2D19C3E0870001520F /* FilterFactory.cpp in Sources */,
+				8785FA2E19C3E0870001520F /* PercentageFilter.cpp in Sources */,
+				8785FA2F19C3E0870001520F /* Node.cpp in Sources */,
+				8785FA3019C3E0870001520F /* Collection.cpp in Sources */,
+				8785FA3119C3E0870001520F /* CSVparser.cpp in Sources */,
+				8785FA3219C3E0870001520F /* BaseUtilities.cpp in Sources */,
+				8785FA2619C3E0120001520F /* DataFlowElement.cpp in Sources */,
+				8785FA2719C3E0120001520F /* DataFlowSourceElement.cpp in Sources */,
+				877C6EDA19C3244F00FA1CCA /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		878663C0199F946300C188DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87ACF43519A055FC000CFD60 /* Node.cpp in Sources */,
+				87ACF43219A04FC1000CFD60 /* GNUPlot_Controller.cpp in Sources */,
+				878663CD199F94E100C188DC /* Collection.cpp in Sources */,
+				878663D7199F953000C188DC /* gnuplot_i.cpp in Sources */,
+				878663C7199F946300C188DC /* main.cpp in Sources */,
+				878663F7199F9E5800C188DC /* GNUPlotter.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87B9EAEC19A0BA5600E6CEA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B9EAF419A0BA5F00E6CEA7 /* extension_functions.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87CD7A28199BA957002DB252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				879BBBDF199D060600D0AAB4 /* CppSQLite3.cpp in Sources */,
+				87CD7A38199BA9E8002DB252 /* CSVparser.cpp in Sources */,
+				87CD7A35199BA964002DB252 /* sqlite3.c in Sources */,
+				87CD7A2F199BA957002DB252 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87CD7A46199BBCAC002DB252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87DA239119A0FEC7008D0090 /* main.cpp in Sources */,
+				87ACF43619A05608000CFD60 /* Node.cpp in Sources */,
+				879BBBE1199D15E300D0AAB4 /* Collection.cpp in Sources */,
+				879BBBE0199D15C900D0AAB4 /* CppSQLite3.cpp in Sources */,
+				878B77FF199D276C002850EF /* TextOutput.cpp in Sources */,
+				87CD7A53199BBCC0002DB252 /* FiveNumberFilter.cpp in Sources */,
+				87CD7A54199BBCC0002DB252 /* BaseFilter.cpp in Sources */,
+				87CD7A55199BBCC0002DB252 /* sqlite3.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F26E3E1998FDF900C43A99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87864CE319F0D92500A2447E /* ReportError.cpp in Sources */,
+				87ACF43719A05611000CFD60 /* Node.cpp in Sources */,
+				87F26E531999048F00C43A99 /* Collection.cpp in Sources */,
+				87F26E4B1998FF6600C43A99 /* CSVparser.cpp in Sources */,
+				87F26E451998FDF900C43A99 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87FD8B8E19A4D64400AA9382 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87FD8B9519A4D64400AA9382 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		871090B4190FF33E00E1CBF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8710908B190FF33E00E1CBF0 /* DataAnalyst */;
+			targetProxy = 871090B3190FF33E00E1CBF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87109098190FF33E00E1CBF0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87109099190FF33E00E1CBF0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8710909E190FF33E00E1CBF0 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8710909F190FF33E00E1CBF0 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		871090A4190FF33E00E1CBF0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				871090A5190FF33E00E1CBF0 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		871090B8190FF33E00E1CBF0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				871090B9190FF33E00E1CBF0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		871090BE190FF33E00E1CBF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		871090BF190FF33E00E1CBF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		871090C1190FF33E00E1CBF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataAnalyst/DataAnalyst-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/DataAnalyst/DrRobot/Utilities/XML",
+				);
+				INFOPLIST_FILE = "DataAnalyst/DataAnalyst-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		871090C2190FF33E00E1CBF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataAnalyst/DataAnalyst-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/DataAnalyst/DrRobot/Utilities/XML",
+				);
+				INFOPLIST_FILE = "DataAnalyst/DataAnalyst-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		871090C4190FF33E00E1CBF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DataAnalyst.app/Contents/MacOS/DataAnalyst";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataAnalyst/DataAnalyst-Prefix.pch";
+				INFOPLIST_FILE = "DataAnalystTests/DataAnalystTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		871090C5190FF33E00E1CBF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DataAnalyst.app/Contents/MacOS/DataAnalyst";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataAnalyst/DataAnalyst-Prefix.pch";
+				INFOPLIST_FILE = "DataAnalystTests/DataAnalystTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		874031D01954AEB900848A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		874031D11954AEB900848A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		877C6EDE19C3244F00FA1CCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(inherited)",
+					"$(PROJECT_DIR)/DataAnalyst/DrRobot/Utilities/XML",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		877C6EDF19C3244F00FA1CCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(inherited)",
+					"$(PROJECT_DIR)/DataAnalyst/DrRobot/Utilities/XML",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		878663CA199F946300C188DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		878663CB199F946300C188DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		87B9EAF219A0BA5600E6CEA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		87B9EAF319A0BA5600E6CEA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		87CD7A33199BA957002DB252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		87CD7A34199BA957002DB252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		87CD7A51199BBCAC002DB252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		87CD7A52199BBCAC002DB252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		87F26E481998FDF900C43A99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		87F26E491998FDF900C43A99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		87FD8B9819A4D64400AA9382 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		87FD8B9919A4D64400AA9382 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87109087190FF33E00E1CBF0 /* Build configuration list for PBXProject "DataAnalyst" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				871090BE190FF33E00E1CBF0 /* Debug */,
+				871090BF190FF33E00E1CBF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		871090C0190FF33E00E1CBF0 /* Build configuration list for PBXNativeTarget "DataAnalyst" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				871090C1190FF33E00E1CBF0 /* Debug */,
+				871090C2190FF33E00E1CBF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		871090C3190FF33E00E1CBF0 /* Build configuration list for PBXNativeTarget "DataAnalystTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				871090C4190FF33E00E1CBF0 /* Debug */,
+				871090C5190FF33E00E1CBF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		874031D21954AEB900848A4F /* Build configuration list for PBXNativeTarget "Node_Tester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				874031D01954AEB900848A4F /* Debug */,
+				874031D11954AEB900848A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		877C6EDD19C3244F00FA1CCA /* Build configuration list for PBXNativeTarget "ExportingTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				877C6EDE19C3244F00FA1CCA /* Debug */,
+				877C6EDF19C3244F00FA1CCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		878663CC199F946300C188DC /* Build configuration list for PBXNativeTarget "PlotTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				878663CA199F946300C188DC /* Debug */,
+				878663CB199F946300C188DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87B9EAF119A0BA5600E6CEA7 /* Build configuration list for PBXNativeTarget "sqlite_extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87B9EAF219A0BA5600E6CEA7 /* Debug */,
+				87B9EAF319A0BA5600E6CEA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87CD7A32199BA957002DB252 /* Build configuration list for PBXNativeTarget "SQLiteTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87CD7A33199BA957002DB252 /* Debug */,
+				87CD7A34199BA957002DB252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87CD7A50199BBCAC002DB252 /* Build configuration list for PBXNativeTarget "FilterTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87CD7A51199BBCAC002DB252 /* Debug */,
+				87CD7A52199BBCAC002DB252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87F26E4A1998FDF900C43A99 /* Build configuration list for PBXNativeTarget "CSVTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87F26E481998FDF900C43A99 /* Debug */,
+				87F26E491998FDF900C43A99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87FD8B9A19A4D64400AA9382 /* Build configuration list for PBXNativeTarget "TreeTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87FD8B9819A4D64400AA9382 /* Debug */,
+				87FD8B9919A4D64400AA9382 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		871090A7190FF33E00E1CBF0 /* DataAnalyst.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				871090A8190FF33E00E1CBF0 /* DataAnalyst.xcdatamodel */,
+			);
+			currentVersion = 871090A8190FF33E00E1CBF0 /* DataAnalyst.xcdatamodel */;
+			path = DataAnalyst.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 87109084190FF33E00E1CBF0 /* Project object */;
+}

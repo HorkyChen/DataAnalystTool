@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+    <ElementCount>3</ElementCount>
+    <Element0>
+        <name>Source_1</name>
+        <type>source</type>
+        <parameters>
+            <filepath>/Users/chenhao/Desktop/Memory/jemalloc.txt</filepath>
+            <seperator>&#x09;</seperator>
+        </parameters>
+    </Element0>
+    <Element1>
+        <name>Filter_1</name>
+        <type>filter</type>
+        <parameters>
+            <type>AverageFilter</type>
+            <targetfield>AverageFilter</targetfield>
+            <groupfields>VmSize</groupfields>
+        </parameters>
+        <source>Source_1</Source>
+    </Element1>
+    <Element2>
+        <name>Plotter_1</name>
+        <type>plotter</type>
+        <parameters>
+            <type>Lines</type>
+            <title/>
+            <xticlabelfield/>
+            <targetfield1>average</targetfield1>
+            <targetfield2/>
+            <targetfield3/>
+            <targetfield4/>
+            <targetfield5/>
+        </parameters>
+        <source>Filter_1</Source>
+    </Element2>
+</Root>
